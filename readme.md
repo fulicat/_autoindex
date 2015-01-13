@@ -10,7 +10,7 @@
 ####主目录 配置方法：
 <pre>
 location / {
-    index  index.html index.htm index.php <font color="red">/_autoindex/index.php</font>;
+    index  index.html index.htm index.php **/_autoindex/index.php**;
 }
 location ~ \.php$ {
     fastcgi_pass   127.0.0.1:9000;
