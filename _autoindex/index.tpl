@@ -35,10 +35,10 @@ button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0;}
 
 a{color:#0078b6;text-decoration:none;}
 a:hover{color:#f60;text-decoration:underline;}
-<?if($file){?>
+<?php
+if($file){?>
 html{
 	background-color:#f9f9f9;
-	
 }
 html,body{
 	overflow:hidden;
@@ -336,7 +336,7 @@ body *{
 </style>
 </head>
 <body ontouchstart="">
-<?
+<?php
 if($file){
 	$fileinfo = pathinfo($file);
 	$ext = strtolower($fileinfo["extension"]);
@@ -471,7 +471,7 @@ $('.btn-toggle').on('click', function(){
 });
 </script>
 
-<?
+<?php
 }else{
 	if(count($hash)){
 		$html = array();

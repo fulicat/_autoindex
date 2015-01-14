@@ -3,8 +3,8 @@
  * autoindex for nginx
  * @authors Jack.Chan (fulicat@qq.com)
  * @date    2015-01-12 17:34:45
- * @update  2015-01-13 16:43:05
- * @version 1.3
+ * @update  2015-01-13 22:08:05
+ * @version 1.4
  * ----- config -----
  * nginx : in nginx.conf set for example:
  * index  index.html  index.php  /_autoindex/index.php;
@@ -17,7 +17,7 @@ date_default_timezone_set("Asia/Shanghai");
 
 header("Content-type: text/html; charset=utf-8");
 
-$version = "1.3";
+$version = "1.4";
 
 // ignores
 $ignores = array(
@@ -63,10 +63,11 @@ switch ($file){
 		break;
 	case 'debug':
 		echo "<h3>debug</h3>";
-		echo "<p>$uri: ". $uri ."</p>";
-		echo "<p>$uri:". $root ."</p>";
+		echo "<p>\$uri: ". $uri ."</p>";
+		echo "<p>\$root:". $root ."</p>";
+		echo "<p>\$file:". $file ."</p>";
 		echo "<p>DOCUMENT_ROOT: ". $_SERVER['DOCUMENT_ROOT'] ."</p>";
-		echo "<p>$full_path: ". $full_path ."</p>";
+		echo "<p>\$full_path: ". $full_path ."</p>";
 		die();
 		break;
 	default:

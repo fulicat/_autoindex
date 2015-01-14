@@ -1,8 +1,10 @@
 #_autoindex for Nginx
 
+*版本：1.4*
+
 *介绍：自定义目录浏览页面，无需安装插件*
 
->安装：将_autoindex目录复制到网站（或虚拟目录）的根目录。
+>安装：将_autoindex目录复制到网站（或虚拟目录）的根目录。php.ini要配置 short_open_tag = On
 
 
 <font color="red">注意：需要配置php支持, 留意下面星号（**）之间的配置</font>
